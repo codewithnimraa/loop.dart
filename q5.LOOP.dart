@@ -1,16 +1,13 @@
-void main() {
-  int number = 5;
-  int factorialResult = factorial(number);
-  
-  print("The factorial of $number is $factorialResult");
-}
 
-int factorial(int n) {
-  int result = 1;
-  
-  for (int i = 1; i <= n; i++) {
-    result *= i;
+void main() {
+  int number = 12345;
+  int sum = 0;
+
+  while (number > 0) {
+    int digit = number % 10;
+    sum += digit;
+    number ~/= 10;
   }
-  
-  return result;
+
+  print("The sum of the digits in $number is $sum");
 }
